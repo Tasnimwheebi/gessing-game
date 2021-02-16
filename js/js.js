@@ -4,8 +4,11 @@ let userName = prompt('please enter your name ');
     alert ('welcome ' + userName);
 
     
-    let respectPeople = prompt('Do I respect the others?'); 
-    switch (respectPeople.toLocaleLowerCase()) {
+    let respectPeople = prompt('Do I respect the others?').toLowerCase() 
+    while( respectPeople !== 'yes' && respectPeople !== 'y' && respectPeople !== 'no' && respectPeople !== 'n'){
+        respectPeople =  prompt('Do I respect the others?');
+    }
+    switch (respectPeople) {
         case 'yes':
             alert('yes I respect the others'); 
             console.log(respectPeople);           
@@ -25,9 +28,12 @@ let userName = prompt('please enter your name ');
         default:
             break;
     }
-
-    let cooPerson = prompt('Do you think that I am  a cooperative person ?'); 
-    switch (cooPerson.toLocaleLowerCase()) {
+    
+    let cooPerson = prompt('Do you think that I am  a cooperative person ?').toLocaleLowerCase()
+    while( cooPerson !== 'yes' && cooPerson !== 'y' && cooPerson !== 'no' && cooPerson !== 'n'){
+        cooPerson = prompt('Do you think that I am  a cooperative person ?');
+    }
+    switch (cooPerson) {
         case 'yes':
             alert('thank you'); 
             console.log(cooPerson);           
@@ -48,8 +54,11 @@ let userName = prompt('please enter your name ');
             break;
     }
 
-    let haveCat = prompt('Do I have a cat? '); 
-    switch (haveCat.toLocaleLowerCase()) {
+    let haveCat = prompt('Do I have a cat? ').toLocaleLowerCase()
+    while( haveCat !== 'yes' && haveCat !== 'y' && haveCat !== 'no' && haveCat !== 'n'){
+        haveCat = prompt('Do I have a cat?');
+    }
+    switch (haveCat) {
         case 'yes':
             alert('yes I have a cat'); 
             console.log(haveCat);           
@@ -70,8 +79,11 @@ let userName = prompt('please enter your name ');
             break;
     }
 
-    let summarVac = prompt('Did I ever go to a summar vacation?'); 
-    switch (summarVac.toLocaleLowerCase()) {
+    let summarVac = prompt('Did I ever go to a summar vacation?').toLocaleLowerCase() 
+    while( summarVac !== 'yes' && summarVac !== 'y' && summarVac !== 'no' && summarVac !== 'n'){
+        summarVac = prompt('Did I ever go to a summar vacation?');
+    }
+    switch (summarVac) {
         case 'yes':
             alert('yes I went to Florida'); 
             console.log(summarVac);           
@@ -92,8 +104,11 @@ let userName = prompt('please enter your name ');
             break;
     }
 
-    let feelLone = prompt('Can I be alone without feeling lonely?'); 
-    switch (feelLone.toLocaleLowerCase()) {
+    let feelLone = prompt('Can I be alone without feeling lonely?').toLocaleLowerCase()
+    while( feelLone !== 'yes' && feelLone !== 'y' && feelLone !== 'no' && feelLone !== 'n'){
+        feelLone = prompt('Can I be alone without feeling lonely?');
+    } 
+    switch (feelLone) {
         case 'yes':
             alert('yes I dont feel lonely , I feel relax'); 
             console.log(feelLone);           

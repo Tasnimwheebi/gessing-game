@@ -1,3 +1,6 @@
+body{
+    background-color: lightcoral;
+}
 body header h1 {
     text-align: center;
     font-style: oblique;
@@ -5,7 +8,11 @@ body header h1 {
 body header p {
     line-height: 3;
     text-align: left;
-}  
+} 
+main ul {
+    margin-left:auto;
+    margin-right: 20px;
+} 
 main ul li:nth-child(1){
     background-color: burlywood;
     color: darkblue;
