@@ -5,8 +5,43 @@ let score = 0
  alert('welcome ' + userName);
 
 
- let respectPeople = prompt('Do I respect the others?').toLowerCase()
- while (respectPeople !== 'yes' && respectPeople !== 'y' && respectPeople !== 'no' && respectPeople !== 'n') {
+ // lab 0-4
+ let respectPeople = prompt('Do I respect the others?').toLowerCase() ;
+ function respectPeopleQues(ques1) {
+    while (respectPeople !== 'yes' && respectPeople !== 'y' && respectPeople !== 'no' && respectPeople !== 'n') {
+        respectPeople = prompt('Do I respect the others?');
+    }
+    switch (respectPeople) {
+        case 'yes':
+            alert('yes I respect the others');
+           console.log(respectPeople);
+           score++ ;
+            console.log(score) ;
+            break;
+        case 'y':
+            alert('yes I respect the others');
+            console.log(respectPeople);
+            score++ ;
+            console.log(score) ;
+            break;
+        case 'no':
+            alert('oops why you think that i respect the others')
+           console.log(respectPeople);
+            break;
+        case 'n':
+           alert('oops why you think that i respect the others')
+            console.log(respectPeople);
+            break;
+        default:
+            break;
+    }
+ }
+
+ respectPeopleQues(respectPeople);
+
+ //lab 03
+
+ /*while (respectPeople !== 'yes' && respectPeople !== 'y' && respectPeople !== 'no' && respectPeople !== 'n') {
      respectPeople = prompt('Do I respect the others?');
  }
  switch (respectPeople) {
@@ -32,7 +67,7 @@ let score = 0
          break;
      default:
          break;
- }
+ }*/
 
  let cooPerson = prompt('Do you think that I am  a cooperative person ?').toLocaleLowerCase()
  while (cooPerson !== 'yes' && cooPerson !== 'y' && cooPerson !== 'no' && cooPerson !== 'n') {
