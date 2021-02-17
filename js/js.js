@@ -1,5 +1,6 @@
 'use strict';
 
+//welcome 
 let score = 0
 let userName = prompt('please enter your name ');
 console.log('welcome ' + userName);
