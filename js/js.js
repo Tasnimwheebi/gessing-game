@@ -70,6 +70,9 @@ let score = 0
  }*/
 
  let cooPerson = prompt('Do you think that I am  a cooperative person ?').toLocaleLowerCase()
+ function cooPersonQuest(question2){
+
+ 
  while (cooPerson !== 'yes' && cooPerson !== 'y' && cooPerson !== 'no' && cooPerson !== 'n') {
     cooPerson = prompt('Do you think that I am  a cooperative person ?');
  }
@@ -97,6 +100,8 @@ let score = 0
      default:
          break;
  }
+}
+cooPersonQuest(cooPerson);
 
  let haveCat = prompt('Do I have a cat? ').toLocaleLowerCase()
 while (haveCat !== 'yes' && haveCat !== 'y' && haveCat !== 'no' && haveCat !== 'n') {
