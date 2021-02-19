@@ -42,36 +42,6 @@ function question1(ques1) {
 
 question1(respectPeople);
 
-//lab 03
-
-/*while (respectPeople !== 'yes' && respectPeople !== 'y' && respectPeople !== 'no' && respectPeople !== 'n') {
-    respectPeople = prompt('Do I respect the others?');
-}
-switch (respectPeople) {
-    case 'yes':
-        alert('yes I respect the others');
-       console.log(respectPeople);
-       score++ ;
-        console.log(score) ;
-        break;
-    case 'y':
-        alert('yes I respect the others');
-        console.log(respectPeople);
-        score++ ;
-        console.log(score) ;
-        break;
-    case 'no':
-        alert('oops why you think that i respect the others')
-       console.log(respectPeople);
-        break;
-    case 'n':
-       alert('oops why you think that i respect the others')
-        console.log(respectPeople);
-        break;
-    default:
-        break;
-}*/
-
 let cooPerson = prompt('Do you think that I am  a cooperative person ?').toLocaleLowerCase();
 function question2(ques2) {
 
