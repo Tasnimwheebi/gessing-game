@@ -1,5 +1,10 @@
 body{
-    background-color: lightcoral;
+    background-color:aquamarine;
+}
+button{
+   margin-left: 42%;
+    background-color:lightblue;
+       
 }
 body header h1 {
     text-align: center;
@@ -16,24 +21,43 @@ main ul {
 main ul li:nth-child(1){
     background-color: burlywood;
     color: darkblue;
+    width: max-content;
 }
 
 main ul li:nth-child(2){
     background-color: darkcyan;
     color: darkgreen;
+    width: max-content;
 }
 main ul li:nth-child(3){
     background-color: darkseagreen;
     color: deeppink;
+    width: max-content;
 }
 main ul li:nth-child(4){
     background-color: dimgray;
     color: firebrick;
+    width: max-content;
 }
 main ul li:nth-child(5){
     background-color: lightblue;
     color: indianred;
+    width: max-content;
 }
-
-
+.box {
+    color:crimson;
+    line-height: 100%;
+    width: max-content; 
+    padding-block:initial;
+    border-radius: 5px;
+    background-color: grey;
+    padding-right: 10px;
+    
+}
+img{
+    float: right;
+    width: 180px;
+    padding-right: 20px;
+   
+}
 
