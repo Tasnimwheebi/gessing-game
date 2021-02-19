@@ -3,10 +3,14 @@
 //welcome 
 let score = 0
 let userName = prompt('please enter your name ');
+while (!userName){
+    userName = prompt('please enter your name ');
+}
 console.log('welcome ' + userName);
 alert('welcome ' + userName);
 
 
+// lab 0-4 adding function to each question
 let respectPeople = prompt('Do I respect the others?').toLowerCase();
 
 function question1(ques1) {
@@ -40,6 +44,36 @@ function question1(ques1) {
 }
 
 question1(respectPeople);
+
+//lab 02 Yes or No questions
+
+/*while (respectPeople !== 'yes' && respectPeople !== 'y' && respectPeople !== 'no' && respectPeople !== 'n') {
+    respectPeople = prompt('Do I respect the others?');
+}
+switch (respectPeople) {
+    case 'yes':
+        alert('yes I respect the others');
+       console.log(respectPeople);
+       score++ ;
+        console.log(score) ;
+        break;
+    case 'y':
+        alert('yes I respect the others');
+        console.log(respectPeople);
+        score++ ;
+        console.log(score) ;
+        break;
+    case 'no':
+        alert('oops why you think that i respect the others')
+       console.log(respectPeople);
+        break;
+    case 'n':
+       alert('oops why you think that i respect the others')
+        console.log(respectPeople);
+        break;
+    default:
+        break;
+}*/
 
 let cooPerson = prompt('Do you think that I am  a cooperative person ?').toLocaleLowerCase();
 function question2(ques2) {
@@ -171,7 +205,7 @@ function question5(ques5) {
     }
 } question5(feelLone);
 
-
+// lab 03  'Extend my 'About Me' and guessing game'
 let i = 0
 let myAge;
 function question6(ques6) {
@@ -202,7 +236,7 @@ function question6(ques6) {
 }
 question6(myAge);
 
-
+//lab 03 'Extend my 'About Me' and guessing game'
 
 let arr = ['pink', 'purple', 'grey', 'blue'];
 let favorColor = prompt('What is my favorite color?');
