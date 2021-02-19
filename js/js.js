@@ -7,7 +7,6 @@ console.log('welcome ' + userName);
 alert('welcome ' + userName);
 
 
-// lab 0-4
 let respectPeople = prompt('Do I respect the others?').toLowerCase();
 
 function question1(ques1) {
